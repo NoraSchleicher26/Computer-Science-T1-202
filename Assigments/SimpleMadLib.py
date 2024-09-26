@@ -1,5 +1,5 @@
 #Today I went to {Place}
-#and saw a {Adjective} racoon
+#and saw  {Adjective} racoons
 #{Verb} through trash.
 #Then I saw {Person} 
 #carry {Number} {Plural Noun}
