@@ -29,4 +29,7 @@ h = float(h)
 print(h)
 i = float(i)
 print(i)
-j=
+j = int(j)
+print(j)
+k = bin(k)
+print(k)
