@@ -1,5 +1,9 @@
-def greet():        #Define a new function
-    print("Hello World!")       #indented lines are "inside" the function
 
-print ("catdog")
-greet()
+
+
+
+def add(x, y):
+    return x + y
+sum = add(10, 9)
+print(sum)
+
