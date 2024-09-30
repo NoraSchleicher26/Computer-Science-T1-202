@@ -1,4 +1,3 @@
-def calculate_tax ():
-    print str(item)
-    print float(price)
-    
+def calculate_tax (item, price, rate):
+    print (price * rate)
+calculate_tax ("pencil", 1.00 , 1.06875)
