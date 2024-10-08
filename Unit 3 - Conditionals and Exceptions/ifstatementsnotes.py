@@ -74,9 +74,11 @@ answer5 = input ("What color are clouds?\n-")
 if answer5 == real_answer5:
     print("CORRECT")
     b = 1
+    
 else:
     print("WRONG")
     b = 0
+    
 print("Score:")
 print (x + y + z + a + b)
 
