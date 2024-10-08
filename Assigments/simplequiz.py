@@ -23,19 +23,19 @@ answer5 = input("What color is a banana?\n-")                    #Asking user 5t
 
 def tally_score():                                               #Defining function to score quiz correctly
     global score                                                 #Pulling global variable into function
-    if answer1 == real_answer1:                                  #Checking answer for question 1
+    if answer1.lower() == real_answer1:                                  #Checking answer for question 1
         score = score + 1                                        #Adding one to score if correct
 
-    if answer2 == real_answer2:                                  #Checking answer for question 2
+    if answer2.lower()== real_answer2:                                  #Checking answer for question 2
         score = score + 1                                        #Adding one to score if correct
 
-    if answer3 == real_answer3:                                  #Checking answer for question 3
+    if answer3.lower() == real_answer3:                                  #Checking answer for question 3
         score = score + 1                                        #Adding one to score if correct
    
-    if answer4 == real_answer4:                                  #Checking answer for question 4
+    if answer4.lower() == real_answer4:                                  #Checking answer for question 4
         score = score + 1                                        #Adding one to score if correct
    
-    if answer5 == real_answer5:                                  #Checking answer for question 5
+    if answer5.lower() == real_answer5:                                  #Checking answer for question 5
         score = score + 1                                        #Adding one to score if correct
     
     print("Score:")                                              #Printing "Score:"
