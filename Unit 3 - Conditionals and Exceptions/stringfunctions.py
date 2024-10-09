@@ -20,7 +20,7 @@ print(x)  #prints HElLO WORLD
 
 #   .capitalize()
 # converts to lowercase, then capitalizes the first letter
-y = :"HeLlO wOrLd".capitalize()
+y = "HeLlO wOrLd".capitalize()
 print (y)  #print "Hello world"
 
 #   .title()
