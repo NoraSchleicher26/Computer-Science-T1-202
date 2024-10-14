@@ -34,3 +34,11 @@ print(z)  #print "Hello World"
 q = "Hello World!". swapcase()
 print (q)  #prints "hELLO wORLD!"
 
+def string_to_number(s):
+    s = input("What is s?\n-")
+    s = int(s)
+
+string_to_number
+
+
+
