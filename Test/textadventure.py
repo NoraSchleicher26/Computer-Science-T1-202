@@ -46,11 +46,62 @@ def enter_hut ():       #Defining function of entering hut
         print("Invalid choice. Try again and please enter 1 or 2.") #Telling user to enter a valid number
         enter_hut ()        #Sending user back to enter hut function to try again
 
-def continue_walking ():   
-    print("You continue walking")
+def continue_walking ():        #Defining function of continue walking for user
+    print("You continue walking and spot a mysterious man offering you shelter and food if you come with him. Do you:")     #Showing description of scenario so user can make the "right" choice
+    print("1. Follow man to his house for the shelter and food he talks of")        #Giving user 1st option of going to mysterious man's house
+    print("2. Politely decline and walk away")      #Giving user 2nd option of walking away from man
+    choice5 = input("> ")       #Place for user to enter their choice of 1 or 2
+    if choice5 == "1":      #Showing what happens if user enters 1
+        print("After following man to his house, he leads you to his basement filled with food but as he heads up the stairs, he locks the door and says, You will stay here forever with me. Adventure is now over")     #Printing decription of what has happened to user and their adventure is now over
+    elif choice5 == "2":        #Showing what happens if user enters 2
+        print("You narrowly avoid a kidnapping and are able to continue walking hopefully towards freedom")     #Printing description of what happens when user chooses to walk away
+        freedom_choice()        #Sending user to function freedom choice
+    else:       #Showing what happens if user enters invalid response
+        print("Invalid choice. Try again and please enter 1 or 2.") #Telling user to enter a valid number
+        continue_walking ()     #Sending user back to continue walking function to try again
 
-def exit_housesafely ():  #NEED TO FINISH LATER, THE ABOVE FUNCTION ALL LEADS TO THIS 
-    print("Exited house safely")
+def freedom_choice():   #Defining function of freedom choice
+    print("You escaped the man and now see the trail split once again. To the left is a greenish haze and to the right is a pinkish haze. Do you:")     #Setting up scene for users to make their best choice
+    print("1. Go to the left towards the greenish haze")    #Giving user option 1 of going into green haze
+    print("2. Go to the right towards the pinkish haze")    #Giving user option 2 of going into pink haze
+    choice6 = input("> ")       #Place for users to enter their choice of 1 or 2
+    if choice6 == "1":      #Showing what happens if user enters 1
+        print("As you enter the green haze you start to feel very sleepy and realize the haze will cause you to fall into a forever deep sleep unless someone could find and save you and you collapse to the floor. Adventure is now over.")   #Printing summary of what happened to user and what their fate is now and that their adventure is now over
+    elif choice6 == "2":    #Showing what happens if user enters 2
+        print("As you make your way through the pink haze you start to see natural sunlight and spot your old house. You run home to your parents and are now safe.")   #Printing what happens to user when they walk into pink and that they are now safe
+    else:   #Showing what happens if users response is invalid
+        print("Invalid choice. Try again and please enter 1 or 2.") #Telling user to enter a valid number
+        freedom_choice ()       #Sending user back to freedom choice function to try again
+
+def exit_housesafely():     #Defining function of exit house safely
+    print("You exited house safely  with food and warm clothes. A purple monster approaches you and asks for some food. Do you:") #Printing scenario for user to make best choice based on situation
+    print("1. Give monster some of your food")  #Giving user option 1 of giving monster food
+    print("2. Don't give monster food") #Giving user option 2 of not giving monester food
+    choice7 = input ("> ")  #Place for user to enter response of 1 or 2
+    if choice7 == "1":  #Showing what happens if user enters 1
+        print("Monster graciously accepts food and offers to show you way out of forest for your kindness. He leads you down a path and soon you are able to exit the forest into the normal world again. You are safe.") #Printing what happens after user gives monster food and that they are now safe because of their kindness
+    elif choice7 == ("2"):  #showing what happens if user enters 2
+        print("Monster understands and walks away leaving you alone.")  #Printing what happens and that user is now alone
+        left_alone () #Sending user to function left alone beause of their choice
+    else:
+        print("Invalid choice. Try again and please enter 1 or 2.") #Telling user to enter a valid number
+        exit_housesafely ()     #Sending user back to exit house safely function to try again
+
+
+def left_alone():   #Defining function of left alone
+    print("Once left alone, you see underground trail with a DO NOT ENTER SIGN but you are desperate to get out as you are running out of food. Do you:") #Printing description of scenario for users to understand what is happening
+    print("1. Enter underground trail") #Giving user option 1 of entering trail
+    print("2. Don't enter trail and sit on a rock waiting for someone to help you")     #Giving user option 2 of not entering trail and waiting
+    choice8 = input("> ")   #Place for user to enter choice of 1 or 2
+    if choice8 == "1":  #showing what happens if user enters 1
+        print("You walk cautiously through trail and eventually see light, you walk outside the trail and see the beach. You are now safely in Florida!") #Telling user what happens to them when they go to underground trail and that they are now safe
+    elif choice8 == "2":    #Showing user what happens if user enters 2
+        print("After running out of food you start to starve and eventually die after getting no help. Game is now over")   #Telling user wha happens after they run of out food and that their game is now over
+    else:       #Showing what happens if users response is invalid
+        print("Invalid choice. Try again and please enter 1 or 2.") #Telling user to enter a valid number
+        left_alone ()       #Sending user back to left alone function to try again
+
+    
 
 
 def enter_foggyfield ():        #Defining function of entering the foggy field
@@ -72,13 +123,34 @@ def enter_foggyfield ():        #Defining function of entering the foggy field
         print("Invalid choice. Try again and please enter 1,2, or 3")   #Telling user they need to enter a 1, 2, or 3 to get a valid response
         enter_foggyfield () #Sending user back to enter foggy field function to try again
     
+    def across_lake ():     #Defining function of across lake
+    print("You are across lake safely and see an old mansion standig tall. You are desperate for food. Do you:")        #Telling user situation they are in after crossing the lake safely
+    print("1. Enter the mansion looking for food")  #Giving users 1st option of entering mansion
+    print("2. Continue on your path looking for other things to eat")   #Giving users 2nd option of not entering mansion and continuing
+    choice9 = input("> ") #Place for users to enter their choice of 1 or 2
+    if choice9 == "1": #Showing what happens if user enters 1
+        print("You enter and see two flights of stairs one going up and the other going down.") #Telling user what they see after enterig mansion
+        choice_stairs() #Sending user to choice stairs function as a result of their choice
+    elif choice9 == "2":    #Showing what happens if user enters 2
+        print("You continue walking through path and spot a rock wall.")    #Telling user what happens as they continue through path
+        rock_wall ()    #Sending user to rock wall function because of their choice
+    else:       #Showing what happens if users response is  invalid
+        print("Invalid choice. Try again and please enter 1 or 2.")     #Telling user to enter a valid number
+        across_lake ()      #Sending user back to across lake function to try again
     
+def choice_stairs():        #Defining function of choice stairs
+    print("You can either go up or down a set of stairs to try and find food/help. Do you:")    #Telling user hwat is going on and the choice they have to make
+    print("1. Go downstairs")   #Giving user option 1 of going downstairs
+    print("2. Go upstairs") #Giving user option 2 of going upstairs
+    choice10 = input("> ")  #Place for users to enter answer of 1 or 2
+    if choice10 == "1":
+        print("You go downstairs and see a vampire with 2 boxes staring intently at you")   #Telling user what happens when they go downstairs and explaining situation
+        vampire_boxes ()
 
-def continue_walking ():
-    print("You continue walking")
+def rock_wall ():
+    12
 
-def across_lake ():
-    print("You are across lake safely")
+def vampire_boxes():    #One boxy has food and key and other just 
 
 def help_needed ():
     print("You scream for help and a young women finds you bleeding out")
