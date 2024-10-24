@@ -117,19 +117,19 @@ def enter_foggyfield ():        #Defining function of entering the foggy field
         print("You walk about a half a mile to the left and see a bridge and safely cross it to the other side of the lake.")   #Printing description of what happened to them when they tryed to walked around lake
         across_lake ()  #Sending user to across lake function because they safely crossed
     elif choice4 == "3":    #Showing what happens if user enters 3
-        print("You try to swim across the river and your leg gets bit by a shark. You barely make it back to shore and are forced to scream for help.") #Printing description of what happend to them when they tryed to cross lake by swimming
+        print("You try to swim across the river and your leg gets bit by a shark. You barely make it to the shore and are forced to scream for help.") #Printing description of what happend to them when they tryed to cross lake by swimming
         help_needed ()  #Sending user to help needed function because they are bleeding
     else:               #Showing what happens is users response is invalid
         print("Invalid choice. Try again and please enter 1,2, or 3")   #Telling user they need to enter a 1, 2, or 3 to get a valid response
         enter_foggyfield () #Sending user back to enter foggy field function to try again
     
-    def across_lake ():     #Defining function of across lake
-    print("You are across lake safely and see an old mansion standig tall. You are desperate for food. Do you:")        #Telling user situation they are in after crossing the lake safely
+def across_lake ():     #Defining function of across lake
+    print("You are across lake safely and see an old mansion standing tall. You are desperate for food. Do you:")        #Telling user situation they are in after crossing the lake safely
     print("1. Enter the mansion looking for food")  #Giving users 1st option of entering mansion
     print("2. Continue on your path looking for other things to eat")   #Giving users 2nd option of not entering mansion and continuing
     choice9 = input("> ") #Place for users to enter their choice of 1 or 2
     if choice9 == "1": #Showing what happens if user enters 1
-        print("You enter and see two flights of stairs one going up and the other going down.") #Telling user what they see after enterig mansion
+        print("You enter and see two flights of stairs one going up and the other going down.") #Telling user what they see after enterig mansion\
         choice_stairs() #Sending user to choice stairs function as a result of their choice
     elif choice9 == "2":    #Showing what happens if user enters 2
         print("You continue walking through path and spot a rock wall.")    #Telling user what happens as they continue through path
@@ -137,23 +137,80 @@ def enter_foggyfield ():        #Defining function of entering the foggy field
     else:       #Showing what happens if users response is  invalid
         print("Invalid choice. Try again and please enter 1 or 2.")     #Telling user to enter a valid number
         across_lake ()      #Sending user back to across lake function to try again
+      
+        
     
 def choice_stairs():        #Defining function of choice stairs
     print("You can either go up or down a set of stairs to try and find food/help. Do you:")    #Telling user hwat is going on and the choice they have to make
     print("1. Go downstairs")   #Giving user option 1 of going downstairs
     print("2. Go upstairs") #Giving user option 2 of going upstairs
     choice10 = input("> ")  #Place for users to enter answer of 1 or 2
-    if choice10 == "1":
-        print("You go downstairs and see a vampire with 2 boxes staring intently at you")   #Telling user what happens when they go downstairs and explaining situation
-        vampire_boxes ()
+    if choice10 == "1": #Showing what happens if user enters 1
+        print("You go downstairs and see a vampire with 3 boxes staring intently at you.")   #Telling user what happens when they go downstairs and explaining situation
+        vampire_boxes ()    #Sending user to function of vampire boxes
+    elif choice10 == "2":   #Showing what happens if user enters 2
+        print("You start heading up the stairs")   #Telling user what happens when they go  upstairs and see a maze
+        maze_choice ()      #Sending user to maze choice function as result of their previous choice
+    else:       #Showing what happens when users response is invalid
+        print("Invalid choice. Try again and please enter 1 or 2.")     #Telling user to enter a valid number
+        choice_stairs ()        #Sending user back to choice stairs function to try again
 
-def rock_wall ():
-    12
+    
 
-def vampire_boxes():    #One boxy has food and key and other just 
+def rock_wall ():   #Defining function of rock wall
+    print("The rock wall looms over you and you can't see anyway around it, there is a ladder and a rope both reaching the top and you can only choose to take 1. Do you:")     #Describing situation to user so they can make their choice
+    print("1. Try to use the ladder leaning against the wall to reach top")   #Giving user 1st option of using ladder
+    print("2. Try to climb the rope up to the top of the wall") #Giving user 2nd option of climbing rope to top
+    choice11 = input("> ")      #Place for user to enter response
+    if choice11 == "1":         #Showing what happens if user enters 1
+        print("As you are climbing to the top, you reach a broken step, but not noticing it, you step on it and fall to your death... Game Over")       #Describing to user what happens when they try to climb the ladder and that there game is now over
+    elif choice11 == "2":       #Showing what happens if user enters 2
+        print("The rope is able to hold up as you climb the wall and when you reach the top you see the bright blue sky and you feel relief as you realize you are now free from the dark forest. Adventure is over and you are safe.")         #Describing to user what happens when they climb rope and that they are now safe out in the bright blue sky
+    else:       #Showing what happens if users response is invalid
+        print("Invalid choice. Try again and please enter 1 or 2.")         #Telling user to enter a valid number
+        rock_wall ()    #Sending user back to rock wall function to try again
 
-def help_needed ():
-    print("You scream for help and a young women finds you bleeding out")
+def help_needed (): #Defining function of help needed
+    print("You scream for help and a young women finds you bleeding out. She offers to give you a mysterious looking purple medicine to instantly heal you. Do you:")   #Describing situation to user so they can make their own logical choice
+    print("1. Accept medicine and drink it")       #Giving user 1st option of taking and drinking medicine
+    print("2. Decline medicine and walk away")  #Giving user 2nd option of declining medication and leaving
+    choice12 = input("> ")  #Place for users to enter their choice
+    if choice12 == "1":     #Showing what happens if user enters 1
+        print("The medication heals your leg very quickly and you are able to continue down the path")  #Telling user what happens when they accept medication 
+        across_lake () #Sending user to the across lake function because they are now healed enough to continue
+    elif choice12 == "2":   #Showing what happens if user enters 2
+        print("You thought you were strong enough to continue but the blood loss causes you to faint and eventually leads to your slow and painful death stranded on the shore. You died and adventure is now over.")   #Telling user what happens when they decline medication they needed and that they have died causing adeventure to end
+    else:       #Showing what happens when users response is invalid
+        print("Invalid choice. Try again and please enter 1 or 2.")         #Telling user to enter a valid number
+        help_needed ()  #Sending user back to help needed function to try again
+
+
+def vampire_boxes():    #Defining function of vamprire boxes
+    print("Their is a door behind the vampire that is locked. He tells you that 1 of the 3 boxes has a key that unlocks the door to a new life and freedom but the other 2 have a black essence that will make you forever stay with the vampire so he can suck your blood. Do you:")   #Desrcibing situation to user so they can make a logical choice
+    print("1. Accept risk and randomly select a box")
+    print("2. Decline risk and go upstairs to the upper part of the home")
+    choice13 = input("> ")  #Place for user to enter their choice
+    if choice13 == "1":    #Showing what happens if user enters 1
+        print("You selected a random box and there is...")  #Setting up intro to results of box
+        import random   #Importing random to work for a function needing a random number
+        k = random.randrange(0,3)    #Having a random function to choose between 0,1, and 2
+        if k == 0:  #Showing what happens if random number is 0
+            print ("A key inside! You unlock door and enter an apartment in London. You can now start a new life and your adventure is now safely over")     #Printing description of what happens if randomly selcted box has key and what their life will now be like
+        else:   #Showing what happens if random number is not 0
+            print ("Nothing in the box. You are now forever trapped with the blood sucking vampire. Adventure is over.")    #Describing to user what happens if they get nothing in box and their final fate with the vampire now
+    elif choice13 == "2":   #Showing what happens if user enters 2
+        print("You declined the vampire's offer and head to the upstairs of the house.")    #Printing description of what happens if user declines vampire offer
+        maze_choice ()      #Sending user to maze choice function as a result of their previous choice
+    else:       #Showing what happens if users reponses is invalid
+        print("Invalid choice. Try again and please enter 1 or 2.")        #Telling user to enter a valid number
+        vampire_boxes ()    #Sending user back to vampire boxes function to try again
+
+def maze_choice():      #Defining function of maze choice
+    print("When you go upstairs you see there is a maze with a sign telling you there is a great reward at the end. Do you:")
+    print("1. Head out of the house not wanting to do the maze")    #Giving user option 1 of leaving the house
+    print("2. Enter maze")  #Giving user 2nd option of entering the maze
+    choice14 = input("> ")  #Place for users to enter their choice
+    if choice 
 
 
 start_adventure ()               #Calling function to start entire adventure
