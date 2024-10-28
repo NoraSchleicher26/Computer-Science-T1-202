@@ -240,12 +240,73 @@ def maze_paths ():      #Defining function for maze_paths
         maze_paths()        #Sending user back to function maze_paths to try again
 
 def red_path ():        #Defining function for red_path
-    print("Red path")
+    print("You chose to walk down the red path and see a white ghost disappearing and reappearing. Do you:")        #Describing situation to users so they can make their choice
+    print("1. Try to follow ghost and continue down red path")      #Giving user option 1 of following ghost
+    print("2. Don't follow ghost and instead choose to go down orange path which is the next closest.")     #Giving user option 2 of not following ghost and going to orange path
+    choice16 = input("> ")      #Place for users to enter their choice
+    if choice16 == "1":     #Showing what happens if user enters 1
+        print("You follow the ghost and he leads you to back to your house but says he will forever haunt you because he had to help you. You are now at home with your parents but will forever be filled with the ghost that is haunting you. Adventure is now over")      #Describing to user what happens after ghost leads you home
+    elif choice16 == "2":       #Showing what happens if user enters 2
+        print("You chose not to follow ghost and instead head to orange path.")     #Reminding user of their choice to go to orange path
+        orange_path ()#Sending user to orange_path function as a result of their choice
+    else:       #Showing what happens if users response is invalid
+        print("Invalid choice. Try again and please enter 1 or 2.")     #Telling user to enter a valid number
+        red_path ()   #Sending user back to function red_path to try again
 
 def orange_path ():     #Defining function for orange_path
-    print("Orange path")
+    print("You enter the orange path and see that the trail leads to an elevator. Do you:")        #Printing description of what is happening in story so user can make their choice
+    print("1. Enter the elevator and choose to go up a floor")      #Giving user option 1 of entering elevator and going up
+    print("2. Enter elevator but choose to go down")        #Giving user option 2 of entering elevator and going down
+    print("3. Turn back around and instead foloow the yellow path.")        #Giving user option 3 of turning around and going to yellow path
+    choice17 = input("> ")      #Place for users to enter their choice
+    if choice17 == "1":     #Showing what happens if user enters 1
+        print("You head into the elevator and go up one floor.")     #Reminding user of their choice to enter elevator and go up
+        up_elevator()       #Sending user to up_elevator function as a result of their choice
+    elif choice17 == "2":       #Showing what happens if user enters 2
+        print("You head into elevator and go down one floor.")      #Reminding user of their choice to enter elevator and go down 
+        down_elevator ()        #Sending user to down_elevator function as a result of their choice
+    elif choice17 == "3":       #Showing what happens if user enters 3
+        print("You decided to turn around and enter the yellow path")       #Reminding user of their choice to turn around and enter yellow path
+        yellow_path ()      #Sending user to yellow_path function as a result of their choice
+    else:
+        print("Invalid choice. Please try again and enter 1,2, or 3.")      #Telling user to enter a a valid number
+        orange_path ()      #Sending user back to function orange_path to try again
 
 def yellow_path ():     #Defining function for yellow_path
-    print("Yellow path")
+    print("You enter the yellow path and see that there is one room full of bats to your left and one room with a black cat to your right. Do you:")        #Describing situation to user of animals so they can make their choice
+    print("1. Enter the room full of bats")     #Giving user option 1 of entering room full of bats
+    print("2. Enter room with black cat")       #Giving user option 2 of entering room with one black cat
+    choice18 = input("> ")      #Place for users to enter their choice
+    if choice18 == "1":     #Showing what happens if user enters 1
+        print("You entered the room full of bats and they transformed you into Batman. You now have to save the people of the normal world because you are a superhero. You are sent home to help people and your adventure is now over.")      #Printing description of what happens to user when they enter room of bats and what their final duty is now
+    elif choice18 == "2":       #Showing what happens if user enters 2
+        print("You entered the room with the black cat.")       #Reminding user of their choice to enter room with black cat
+        black_cat ()        #Sending user to function black_cat as a result of their choice
+    else:       #Showing what happens if users response is invalid
+        print("Invalid choice. Try again and please enter 1 or 2.")         #Telling user to enter a valid number
+        yellow_path ()      #Sending user back to function yellow_path to try again
+def black_cat ():
+    print("You see the black cat. Do you:")     #Describing situation to user so they can make a choice
+    print("1. Pet the cat")     #Giving user option 1 of petting black cat
+    print("2. Turn around and enter the room full of bats instead")     #Giving user option 2 of not petting cat and entering bat room instead
+    choice19 = input("> ")      #Place for users to enter their choice
+    if choice19 == "1":     #Showing what happens if user enters 1
+        print("Black cats mean bad luck and as soon as you pet it, you turn to stone and wil forever be stuck there. Adventure is now over.")       #Describing to user what happened after they tried to pet the black cat and telling them their adventure is over now
+    elif choice19 == "2":       #Showing what happens if user enters 2
+        print("You turned around.")     #Reminding user of their choice to turn around and enter bat room
+        print("You entered the room full of bats and they transformed you into Batman. You now have to save the people of the normal world because you are a superhero. You are sent home to help people and your adventure is now over.")      #Printing description of what happens to user when they enter room of bats and what their final duty is now
+    else:       #Showing what happens if users response is invalid
+        print("Invalid choice. Try again and please enter 1 or 2.")     #Telling user to enter a valid number
+        black_cat ()        #Sending user back to function black_cat to try again
+    
+#JUST HAVE TO FINISH UP AND DOWN ELEVATOR FUNCTION AND MAYBE EDIT COMMENTS
+def up_elevator ():
+    print("You decide to go up and it leads you to ")
+
+def down_elevator ():
+    print("As the elevator heads down, you hear laughter")
+
+
 
 start_adventure ()      #Calling function to start entire adventure
+
