@@ -289,7 +289,7 @@ def yellow_path ():     #Defining function for yellow_path
         print("Invalid choice. Try again and please enter 1 or 2.")         #Telling user to enter a valid number
         yellow_path ()
         
-def black_cat ():
+def black_cat ():       #Defining function for black_cat
     print("You see the black cat. Do you:")     #Describing situation to user so they can make a choice
     print("1. Pet the cat")     #Giving user option 1 of petting black cat
     print("2. Turn around and enter the room full of bats instead")     #Giving user option 2 of not petting cat and entering bat room instead
@@ -320,12 +320,6 @@ def down_elevator ():       #Defining function for down_elevator
 def up_elevator ():     #Defining function for up_elevator
     print("You decide to go up and it leads you to an old witch who takes you on her broomstick back to your house safe and sound. Your adventure is now over and you are safe at home.")       #Telling user what happened when they went up elevator and that they are now safely at home
 
-#JUST HAVE TO FINISH UP AND DOWN ELEVATOR FUNCTION AND MAYBE EDIT COMMENTS
-def up_elevator ():
-    print("You decide to go up and it leads you to ")
-
-def down_elevator ():
-    print("As the elevator heads down, you hear laughter")
 
 
 
