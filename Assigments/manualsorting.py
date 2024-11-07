@@ -45,18 +45,18 @@ def quick_sort(numbers2):       #Define function and take the list as a paramete
                 lPos = i
                 break
 
-        #find r
+        #Find r
         for i in range(len(numbers2)-1, -1, -1):
             if numbers2[i] < pivot:
                 rPos = i
                 break
-        #check if L index is greater than r index
+        #Check if L index is greater than r index
             if lPos>rPos:
                 numbers2[lPos], numbers2[-1] = numbers2[-1], numbers2[lPos]
                 break
             else:
                 numbers2[lPos], numbers2[rPos] = numbers2[rPos], numbers2[lPos]
-        #swap l and r values
+        #Swap l and r values
         numbers2[lPos], numbers2[rPos] = numbers2[rPos], numbers2[lPos]
     
     
