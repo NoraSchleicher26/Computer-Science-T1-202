@@ -2,7 +2,7 @@
 #The for loop lets you iterate a list
 #-great for looping a set number of times
 #BUT WHAT IF we need to loop an uncertain number of time???
-#ex. Enterting your password
+#ex. Entering your password
 #You could get it right the first time
 #It could take you a million tries
 #Or anything in between
