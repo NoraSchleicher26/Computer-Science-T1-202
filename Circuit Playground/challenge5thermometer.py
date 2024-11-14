@@ -3,10 +3,10 @@ import time
 
 
 
-while True:
-    temp_c = cp.temperature
-    temp_f = (temp_c * 9/5) + 32
-    if temp_f < 78:
+while True:     #Has program run the entire time
+    temp_c = cp.temperature     #Creating variable for temperature in Celcius
+    temp_f = (temp_c * 9/5) + 32        #Converting temperature in Celcius to temperature in Fahrenheit
+    if temp_f < 78:     #Shows what happens if temperature is < 78
         cp.pixels[0] = (0,0,1)
         cp.pixels[1] = (0,0,0)
         cp.pixels[2] = (0,0,0)
@@ -17,7 +17,7 @@ while True:
         cp.pixels[7] = (0,0,0)
         cp.pixels[8] = (0,0,0)
         cp.pixels[9] = (0,0,0)
-    if temp_f > 78:
+    if temp_f > 78:     #Shows what happens if temperature is > 78
         cp.pixels[0] = (0,0,1)
         cp.pixels[1] = (0,0,1)
         cp.pixels[2] = (0,0,0)
@@ -28,7 +28,7 @@ while True:
         cp.pixels[7] = (0,0,0)
         cp.pixels[8] = (0,0,0)
         cp.pixels[9] = (0,0,0)
-    if temp_f > 79:
+    if temp_f > 79:     #shows what happens if temperature is > 79
         cp.pixels[0] = (0,0,1)
         cp.pixels[1] = (0,0,1)
         cp.pixels[2] = (0,0,1)
@@ -39,7 +39,7 @@ while True:
         cp.pixels[7] = (0,0,0)
         cp.pixels[8] = (0,0,0)
         cp.pixels[9] = (0,0,0)
-    if temp_f > 80:
+    if temp_f > 80:     #Shows what happens if temperature is > 80
         cp.pixels[0] = (0,0,1)
         cp.pixels[1] = (0,0,1)
         cp.pixels[2] = (0,0,1)
@@ -50,7 +50,7 @@ while True:
         cp.pixels[7] = (0,0,0)
         cp.pixels[8] = (0,0,0)
         cp.pixels[9] = (0,0,0)
-    if temp_f > 81:
+    if temp_f > 81:     #Shows what happens if temperature is > 81
         cp.pixels[0] = (0,0,1)
         cp.pixels[1] = (0,0,1)
         cp.pixels[2] = (0,0,1)
@@ -61,7 +61,7 @@ while True:
         cp.pixels[7] = (0,0,0)
         cp.pixels[8] = (0,0,0)
         cp.pixels[9] = (0,0,0)
-    if temp_f > 82:
+    if temp_f > 82:     #Shows what happens if temperature is > 82
         cp.pixels[0] = (0,0,1)
         cp.pixels[1] = (0,0,1)
         cp.pixels[2] = (0,0,1)
@@ -72,7 +72,7 @@ while True:
         cp.pixels[7] = (0,0,0)
         cp.pixels[8] = (0,0,0)
         cp.pixels[9] = (0,0,0)
-    if temp_f > 83:
+    if temp_f > 83:     #Shows what happens if temperature is > 83
         cp.pixels[0] = (0,0,1)
         cp.pixels[1] = (0,0,1)
         cp.pixels[2] = (0,0,1)
@@ -83,7 +83,7 @@ while True:
         cp.pixels[7] = (0,0,0)
         cp.pixels[8] = (0,0,0)
         cp.pixels[9] = (0,0,0)
-    if temp_f > 84:
+    if temp_f > 84:     #Shows what happens if temperature is > 84
         cp.pixels[0] = (0,0,1)
         cp.pixels[1] = (0,0,1)
         cp.pixels[2] = (0,0,1)
@@ -94,7 +94,7 @@ while True:
         cp.pixels[7] = (1,0,0)
         cp.pixels[8] = (0,0,0)
         cp.pixels[9] = (0,0,0)
-    if temp_f > 85:
+    if temp_f > 85:     #Shows what happens if temperature is > 85
         cp.pixels[0] = (0,0,1)
         cp.pixels[1] = (0,0,1)
         cp.pixels[2] = (0,0,1)
@@ -105,7 +105,7 @@ while True:
         cp.pixels[7] = (1,0,0)
         cp.pixels[8] = (1,0,0)
         cp.pixels[9] = (0,0,0)
-    if temp_f > 86:
+    if temp_f > 86:     #Shows what happens if temperature is > 86
         cp.pixels[0] = (0,0,1)
         cp.pixels[1] = (0,0,1)
         cp.pixels[2] = (0,0,1)
