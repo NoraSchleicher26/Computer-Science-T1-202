@@ -1,121 +1,37 @@
-from adafruit_circuitplayground import cp       #Importing cp to allow code in playground to run
-import time
+from adafruit_circuitplayground import cp       #Importing cp for program to run
+cp.pixels.brightness = 0.1      #Turning brightness down
 
 
 
-while True:     #Has program run the entire time
-    temp_c = cp.temperature     #Creating variable for temperature in Celcius
-    temp_f = (temp_c * 9/5) + 32        #Converting temperature in Celcius to temperature in Fahrenheit
-    if temp_f < 78:     #Shows what happens if temperature is < 78
-        cp.pixels[0] = (0,0,1)
-        cp.pixels[1] = (0,0,0)
-        cp.pixels[2] = (0,0,0)
-        cp.pixels[3] = (0,0,0)
-        cp.pixels[4] = (0,0,0)
-        cp.pixels[5] = (0,0,0)
-        cp.pixels[6] = (0,0,0)
-        cp.pixels[7] = (0,0,0)
-        cp.pixels[8] = (0,0,0)
-        cp.pixels[9] = (0,0,0)
-    if temp_f > 78:     #Shows what happens if temperature is > 78
-        cp.pixels[0] = (0,0,1)
-        cp.pixels[1] = (0,0,1)
-        cp.pixels[2] = (0,0,0)
-        cp.pixels[3] = (0,0,0)
-        cp.pixels[4] = (0,0,0)
-        cp.pixels[5] = (0,0,0)
-        cp.pixels[6] = (0,0,0)
-        cp.pixels[7] = (0,0,0)
-        cp.pixels[8] = (0,0,0)
-        cp.pixels[9] = (0,0,0)
-    if temp_f > 79:     #shows what happens if temperature is > 79
-        cp.pixels[0] = (0,0,1)
-        cp.pixels[1] = (0,0,1)
-        cp.pixels[2] = (0,0,1)
-        cp.pixels[3] = (0,0,0)
-        cp.pixels[4] = (0,0,0)
-        cp.pixels[5] = (0,0,0)
-        cp.pixels[6] = (0,0,0)
-        cp.pixels[7] = (0,0,0)
-        cp.pixels[8] = (0,0,0)
-        cp.pixels[9] = (0,0,0)
-    if temp_f > 80:     #Shows what happens if temperature is > 80
-        cp.pixels[0] = (0,0,1)
-        cp.pixels[1] = (0,0,1)
-        cp.pixels[2] = (0,0,1)
-        cp.pixels[3] = (1,1,0)
-        cp.pixels[4] = (0,0,0)
-        cp.pixels[5] = (0,0,0)
-        cp.pixels[6] = (0,0,0)
-        cp.pixels[7] = (0,0,0)
-        cp.pixels[8] = (0,0,0)
-        cp.pixels[9] = (0,0,0)
-    if temp_f > 81:     #Shows what happens if temperature is > 81
-        cp.pixels[0] = (0,0,1)
-        cp.pixels[1] = (0,0,1)
-        cp.pixels[2] = (0,0,1)
-        cp.pixels[3] = (1,1,0)
-        cp.pixels[4] = (1,1,0)
-        cp.pixels[5] = (0,0,0)
-        cp.pixels[6] = (0,0,0)
-        cp.pixels[7] = (0,0,0)
-        cp.pixels[8] = (0,0,0)
-        cp.pixels[9] = (0,0,0)
-    if temp_f > 82:     #Shows what happens if temperature is > 82
-        cp.pixels[0] = (0,0,1)
-        cp.pixels[1] = (0,0,1)
-        cp.pixels[2] = (0,0,1)
-        cp.pixels[3] = (1,1,0)
-        cp.pixels[4] = (1,1,0)
-        cp.pixels[5] = (1,1,0)
-        cp.pixels[6] = (0,0,0)
-        cp.pixels[7] = (0,0,0)
-        cp.pixels[8] = (0,0,0)
-        cp.pixels[9] = (0,0,0)
-    if temp_f > 83:     #Shows what happens if temperature is > 83
-        cp.pixels[0] = (0,0,1)
-        cp.pixels[1] = (0,0,1)
-        cp.pixels[2] = (0,0,1)
-        cp.pixels[3] = (1,1,0)
-        cp.pixels[4] = (1,1,0)
-        cp.pixels[5] = (1,1,0)
-        cp.pixels[6] = (1,1,0)
-        cp.pixels[7] = (0,0,0)
-        cp.pixels[8] = (0,0,0)
-        cp.pixels[9] = (0,0,0)
-    if temp_f > 84:     #Shows what happens if temperature is > 84
-        cp.pixels[0] = (0,0,1)
-        cp.pixels[1] = (0,0,1)
-        cp.pixels[2] = (0,0,1)
-        cp.pixels[3] = (1,1,0)
-        cp.pixels[4] = (1,1,0)
-        cp.pixels[5] = (1,1,0)
-        cp.pixels[6] = (1,1,0)
-        cp.pixels[7] = (1,0,0)
-        cp.pixels[8] = (0,0,0)
-        cp.pixels[9] = (0,0,0)
-    if temp_f > 85:     #Shows what happens if temperature is > 85
-        cp.pixels[0] = (0,0,1)
-        cp.pixels[1] = (0,0,1)
-        cp.pixels[2] = (0,0,1)
-        cp.pixels[3] = (1,1,0)
-        cp.pixels[4] = (1,1,0)
-        cp.pixels[5] = (1,1,0)
-        cp.pixels[6] = (1,1,0)
-        cp.pixels[7] = (1,0,0)
-        cp.pixels[8] = (1,0,0)
-        cp.pixels[9] = (0,0,0)
-    if temp_f > 86:     #Shows what happens if temperature is > 86
-        cp.pixels[0] = (0,0,1)
-        cp.pixels[1] = (0,0,1)
-        cp.pixels[2] = (0,0,1)
-        cp.pixels[3] = (1,1,0)
-        cp.pixels[4] = (1,1,0)
-        cp.pixels[5] = (1,1,0)
-        cp.pixels[6] = (1,1,0)
-        cp.pixels[7] = (1,0,0)
-        cp.pixels[8] = (1,0,0)
-        cp.pixels[9] = (1,0,0)
+
+
+while True:     #Having program run all the time
+    temp_f = cp.temperature     #Creating variable for temperature in Fahrenheit
+    temp_c = (temp_f * 9 / 5) + 32      #Converting temperature in Fahrenheit to Celcius
+   
+   
+    if temp_c < 78:     #Showing what happens if temp_c < 78
+        cp.pixels[0] = (0 ,0 ,1)        #Sets light to Blue
+    if temp_c > 78:     #Showing what happens if temp_c > 78
+        cp.pixels[1] = (0 ,0 ,1)        #Sets light to Blue
+    if temp_c > 79:     #Showing what happens if temp_c > 79
+        cp.pixels[2] = (0 ,0 ,1)        #Sets light to Blue
+    if temp_c > 80:     #Showing what happens if temp_c > 80
+        cp.pixels[3] = (1 ,1 ,0)        #Sets light to Yellow
+    if temp_c > 81:     #Showing what happens if temp_c > 81
+        cp.pixels[4] = (1, 1 ,0)        #Sets light to Yellow
+    if temp_c > 82:     #Showing what happens if temp_c > 82
+        cp.pixels[5] = (1 ,1 ,0)        #Sets light to Yellow
+    if temp_c > 83:     #Showing what happens if temp_c > 83
+        cp.pixels[6] = (1 ,1 ,0)        #Sets light to Yellow
+    if temp_c > 84:     #Showing what happens if temp_c > 84
+        cp.pixels[7] = (1 ,0 ,0)        #Sets light to Red
+    if temp_c > 85:     #Showing what happens if temp_c > 85
+        cp.pixels[8] = (1 ,0 ,0)        #Sets light to Red
+    if temp_c > 86:     #Showing what happens if temp_c > 86
+        cp.pixels[9] = (1 ,0 ,0)        #Sets light to Red
+
+
 
 
         
