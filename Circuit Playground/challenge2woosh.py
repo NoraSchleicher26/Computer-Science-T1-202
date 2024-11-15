@@ -1,5 +1,5 @@
 from adafruit_circuitplayground import cp       #Importing cp to allow code in playground to run
-import time     #Importing time for code to run on 367ms repetitions
+import time     #Importing time for code to run on 100ms repetitions
 
 
 
