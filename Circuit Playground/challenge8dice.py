@@ -3,11 +3,14 @@ import time     #Import time for program to be able to run on time durations
 
 cp.pixels.brightness = 0.1      #Turning brightness down
 
+debounce_time = 0.1     #100 ms debounce period
 
-while True:		#Has program run all the time
+
+while True:     #Has program run all the time
     import random       #Importing random to get random integers
     diceroll = random.randint(1,11)     #Creating variable for dice roll that can be 1-10
     if cp.button_a:     #Showing what happens if button a is pressed
+        time.sleep(debounce_time)       #Pause to debounce
         if diceroll == 1:       #Showing what happens if dice roll is one
             cp.pixels[0] = (0,0,255)        #Pixel 0 is blue
             cp.pixels[1] = (0,0,0)      #Pixel 1 is off
@@ -21,6 +24,8 @@ while True:		#Has program run all the time
             cp.pixels[9] = (0,0,0)      #Pixel 10 is off
            
            
+
+
 
 
         if diceroll == 2:       #Showing what happens if dice roll is two
@@ -134,7 +139,5 @@ while True:		#Has program run all the time
            
     if cp.button_b:     #Showing what happens if button b is pushed
         cp.pixels.fill((0,0,0))     #Turning all lights off
-
-       
 
 
