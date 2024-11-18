@@ -1,5 +1,5 @@
 from adafruit_circuitplayground import cp       #Importing cp for program to run
-cp.pixels.brightness = 0.1      #Turning brightness down
+
 
 
 
