@@ -10,7 +10,7 @@ while True:     #Having program run all the time
     temp_c = (temp_f * 9 / 5) + 32      #Converting temperature in Fahrenheit to Celcius
    
    
-    if temp_c < 78:     #Showing what happens if temp_c < 78
+    if temp_c <= 78:     #Showing what happens if temp_c <= 78
         cp.pixels[0] = (0 ,0 ,1)        #Sets light to Blue
     if temp_c > 78:     #Showing what happens if temp_c > 78
         cp.pixels[1] = (0 ,0 ,1)        #Sets light to Blue
