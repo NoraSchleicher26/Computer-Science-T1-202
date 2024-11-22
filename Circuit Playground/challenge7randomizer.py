@@ -1,6 +1,6 @@
 from adafruit_circuitplayground import cp       #Importing cp to allow code in playground to run
 import time     #Import time for program to be able to run on time durations
-cp.pixels.brightness = 0.01      #Turns brightness down
+
 
 
 while True:     #Has program run all the time
