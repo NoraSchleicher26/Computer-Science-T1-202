@@ -6,7 +6,7 @@ import time     #Import time for program to be able to run on time durations
 while True:     #Has program run all the time
     import random       #Importing random so we can get random integers for colors
     x, y, z = cp.acceleration       #Getting acceleration involved 
-    shake_threshold = 7.0      #Setting shake threshold that will start program
+    shake_threshold = 9.0      #Setting shake threshold that will start program
     if abs(x) > shake_threshold or abs(y) > shake_threshold or abs(z) > shake_threshold:        #If statement for if shake threshold is less than the shake
         cp.pixels[0] = (random.randint(1,256), random.randint(1,256), random.randint(1,256))        #Setting light 0 to random color with randint
         cp.pixels[1] = (random.randint(1,256), random.randint(1,256), random.randint(1,256))        #Setting light 1 to random color with randint
